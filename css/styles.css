@@ -37,7 +37,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-txt-cl);
 }
-
 .btn {
   font-family: var(--basic-font);
   font-style: normal;
@@ -52,14 +51,12 @@ body {
   cursor: pointer;
   border: none;
 }
-
 .title-third {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navyblue-dark-txt-cl);
 }
-
 .title-two {
   font-weight: 700;
   font-size: 36px;
@@ -68,19 +65,15 @@ body {
   color: var(--navyblue-dark-txt-cl);
 
 }
-
 .description-txt {
   color: var(--slate-txt-cl);
 }
-
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,15 +100,12 @@ body {
   text-transform: uppercase;
   color: var(--primary-logo-cl);
 }
-
 .logo-color {
   color: var(--navyblue-dark-txt-cl);
 }
-
 .logo-color-second {
   color: var(--cloud-light-bg-cl);
 }
-
 .nav-site {
   font-style: normal;
   font-weight: 500;
@@ -124,13 +114,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--navyblue-dark-txt-cl);
 }
-
 .contact-link {
   font-style: normal;
   line-height: 1.5;
   color: var(--slate-txt-cl);
 }
-
 .nav-site:hover,
 .nav-site:focus,
 .contact-link:hover,
@@ -142,7 +130,6 @@ body {
 .hero {
  background-color: var(--navyblue-dark-bg-cl);
 }
-
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -150,13 +137,11 @@ body {
   /* text-align: center; */
   color: var(--basic-white-txt-cl);
 }
-
 .hero-btn {
   color: var(--basic-white-txt-cl);
   background-color: var(--primary-bg-cl);
   border: none;
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--pressed-bg-cl);
@@ -166,7 +151,6 @@ body {
 .team {
   background-color: var(--cloud-light-bg-cl);
 }
-
 .team-position {
   background-color: var(--basic-white-bg-cl);
 }
@@ -175,7 +159,6 @@ body {
 .footer {
   background-color: var(--navyblue-dark-bg-cl);
 }
-
 .footer-description {
   color: var(--accent-txt-cl);
 }
@@ -186,7 +169,6 @@ body {
   background-color: var(--cloud-light-bg-cl);
   
 }
-
 .btn.filter:hover,
 .btn.filter:focus {
   color: var(--basic-white-txt-cl);
