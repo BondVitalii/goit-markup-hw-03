@@ -23,7 +23,27 @@
   --secondary-font: Raleway, sans-serif;
 }
 
-/*|===== Общие CSS =====|*/
+/* Reset styles */
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+} */
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
 
 /* СOMMON STYLES */
 body {
@@ -37,6 +57,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-txt-cl);
 }
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding: 0 15px; альтернативная запись */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; альтернативная запись */
+
+  outline: 1px solid red;
+}
+
+
+
 .btn {
   font-family: var(--basic-font);
   font-style: normal;
@@ -67,12 +102,7 @@ body {
 .description-txt {
   color: var(--slate-txt-cl);
 }
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -108,9 +138,9 @@ body {
 .nav-site {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  /* font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
   color: var(--navyblue-dark-txt-cl);
 }
 .contact-link {
