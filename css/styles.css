@@ -3,15 +3,15 @@
   --basic-white-txt-cl: #ffffff;
   --navyblue-dark-txt-cl: #2e2f42;
   --slate-txt-cl: #434455;
-  --pressed-txt-cl: #404BBF;
+  --pressed-txt-cl: #404bbf;
   --primary-txt-cl: #4d5ae5;
   --accent-txt-cl: #e7e9fc;
-  
+
   /* Background-color (bg-cl) */
   --basic-white-bg-cl: #ffffff;
   --navyblue-dark-bg-cl: #2e2f42;
   --cloud-light-bg-cl: #f4f4fd;
-  --pressed-bg-cl: #404BBF;
+  --pressed-bg-cl: #404bbf;
   --primary-bg-cl: #4d5ae5;
 
   /* logo-color */
@@ -27,7 +27,7 @@
 
 /* СOMMON STYLES */
 body {
-	background-color: var(--basic-white-bg-cl);
+  background-color: var(--basic-white-bg-cl);
 
   font-family: var(--basic-font);
   font-style: normal;
@@ -63,7 +63,6 @@ body {
   line-height: 1.11;
   text-transform: capitalize;
   color: var(--navyblue-dark-txt-cl);
-
 }
 .description-txt {
   color: var(--slate-txt-cl);
@@ -81,7 +80,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -128,7 +127,7 @@ body {
 
 /* HERO */
 .hero {
- background-color: var(--navyblue-dark-bg-cl);
+  background-color: var(--navyblue-dark-bg-cl);
 }
 .hero-title {
   font-weight: 700;
@@ -151,7 +150,7 @@ body {
 .team {
   background-color: var(--cloud-light-bg-cl);
 }
-.team-position {
+.team-item {
   background-color: var(--basic-white-bg-cl);
 }
 
@@ -167,7 +166,6 @@ body {
 .btn.filter {
   color: var(--primary-txt-cl);
   background-color: var(--cloud-light-bg-cl);
-  
 }
 .btn.filter:hover,
 .btn.filter:focus {
