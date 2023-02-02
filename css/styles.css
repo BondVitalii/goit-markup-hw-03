@@ -22,18 +22,28 @@
   --basic-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 }
+/*---------- Reset styles---------- */
 
-/* Reset styles */
-*,
+/* *,
 *::after,
 *::before {
   padding: 0px;
   margin: 0px;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-/* h1,h2,h3,h4,h5,h6,p {
-  margin: 0;
-} */
+img {
+  display: block;
+}
 
 .link {
   text-decoration: none;
@@ -45,7 +55,8 @@
   padding: 0;
 }
 
-/* СOMMON STYLES */
+/*----------СOMMON STYLES----------*/
+
 body {
   background-color: var(--basic-white-bg-cl);
 
@@ -69,8 +80,6 @@ body {
 
   outline: 1px solid red;
 }
-
-
 
 .btn {
   font-family: var(--basic-font);
@@ -117,9 +126,10 @@ body {
   overflow: hidden;
 }
 
-/*|===== Индивидуальные CSS =====|*/
+/*========== Индивидуальные CSS ==========*/
 
-/* HEADER SECTION */
+/*-----HEADER SECTION----- */
+
 .logo-site {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -153,6 +163,28 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--pressed-txt-cl);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-site {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
 }
 
 /* HERO */
