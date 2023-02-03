@@ -23,7 +23,7 @@
   --secondary-font: Raleway, sans-serif;
 }
 
-/*========== Reset styles ==========*/
+/*---------- Reset styles----------*/ 
 h1,
 h2,
 h3,
@@ -33,6 +33,16 @@ h6,
 p {
   margin: 0;
 }
+/**Это альтернативный вариант Reset
+  |============================
+  | *,
+  |  *::after,
+  |  *::before {
+  |  padding: 0px;
+  |  margin: 0px;
+  |  }
+  |============================
+*/
 
 img {
   display: block;
@@ -48,8 +58,7 @@ img {
   padding: 0;
 }
 
-/*########## Basic style ##########*/
-
+/*=============== Basic style ===============*/
 body {
   background-color: var(--basic-white-bg-cl);
 
@@ -68,8 +77,14 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /**альтернативная запись
+    |============================
+    | padding: 0 15px;
+    | margin: 0 auto;
+    |============================
+  */
 
-  /*для визуального эфекта во время работы*/
+  /* для визуального эфекта во время работы */
   outline: 1px solid red;
 }
 
@@ -118,22 +133,22 @@ body {
   overflow: hidden;
 }
 
-/*########## Individual Styles ##########*/
+/*=============== Individual Styles ===============*/
 
-/*========== Header section ==========*/
+/*-----Header section----- */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/*Header nav*/
+/* Header navigtion */
 .header-nav {
   display: flex;
   align-items: center;
 }
 
-/*Logo*/
+/* Logo */
 .logo-site {
   margin-right: 76px;
 
@@ -145,24 +160,51 @@ body {
   text-transform: uppercase;
   color: var(--primary-logo-cl);
 }
-
 .logo-color {
   color: var(--navyblue-dark-txt-cl);
 }
-
 .logo-color-second {
   color: var(--cloud-light-bg-cl);
 }
 
-/*Navigation list*/
+/* Navigation list*/
 .nav-list {
   display: flex;
   align-items: center;
 }
-
-.nav-list, .nav-item:not(:last-child) {
-  margin-right: 40px;
+/*Устанавл. зазоры в навегации меню 1н из вариантов*/
+.nav-list, .nav-item + .nav-item {
+  margin-left: 40px;
 }
+/**Другие варианты.
+|column-gap: 40px;
+|============================
+|Это альтернативный вариант №1
+|Установка зазоров между ссылками меню навигации,
+|не используя nav-item.
+|column-gap: 40px; вставляем в .nav-list, а 
+|.nav-list, .nav-item:not(:last-child) {
+|  margin-right: 40px;
+|  } 
+|удаляем!
+|============================
+|
+| .nav-list, .nav-item + .nav-item {
+|    margin-left: 40px;}
+|============================
+|Это альтернативный вариант №2.
+|Установка зазоров между ссылками меню навигации.
+|Этот вариант старый, но работает.
+|============================
+|
+| .nav-list, .nav-item:not(:last-child) {
+|    margin-right: 40px;}
+|============================
+|Это альтернативный вариант №3.
+|Установка зазоров между ссылками меню навигации.
+|Этот вариант новый.
+|============================
+*/
 
 .nav-link {
   display: block;
@@ -182,7 +224,7 @@ body {
   color: var(--pressed-txt-cl);
 }
 
-/*Contact*/
+/* Contact */
 .contact-list {
   display: flex;
   align-items: center;
@@ -198,15 +240,14 @@ body {
   color: var(--pressed-txt-cl);
 }
 
-/*========== Hero section ==========*/
-
+/*----- Hero section ----- */
 .hero {
   background-color: var(--navyblue-dark-bg-cl);
 }
 
 .section-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px; */
+
 }
 
 .hero-title {
@@ -221,40 +262,15 @@ body {
   text-align: center;
   color: var(--basic-white-txt-cl);
 }
-
 .hero-btn {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px 32px;
-
-  min-width: 169px;
-
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   color: var(--basic-white-txt-cl);
   background-color: var(--primary-bg-cl);
-  /* border: none; */
-
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--pressed-bg-cl);
 }
-
-/*========== Advantage ==========*/
-.advantage-list {
-  display: flex;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  /* column-gap: 24px; */
-  gap: 24px;
-}
-
-.advantage-title {
-  margin-bottom: 8px;
-}
-
 
 /*----- Team section -----*/
 .team {
