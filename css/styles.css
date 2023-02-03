@@ -21,6 +21,10 @@
   /* fonts */
   --basic-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
+
+  /* card-set */
+  --distance: 24px;
+  --items-card: 3;
 }
 
 /*========== Reset styles ==========*/
@@ -36,6 +40,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -69,8 +75,17 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  /*для визуального эфекта во время работы*/
+  /*для визуального эфекта время работы*/
   outline: 1px solid red;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--distance);
+}
+
+.item-set {
 }
 
 .btn {
@@ -87,6 +102,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+.text-center {
+  text-align: center;
+}
+
 .title-third {
   font-weight: 500;
   font-size: 20px;
@@ -94,9 +114,13 @@ body {
   color: var(--navyblue-dark-txt-cl);
 }
 .title-two {
+  margin: 0 auto 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+
+  text-align: center;
   text-transform: capitalize;
   color: var(--navyblue-dark-txt-cl);
 }
@@ -121,6 +145,10 @@ body {
 /*########## Individual Styles ##########*/
 
 /*========== Header section ==========*/
+.section-header {
+  border-bottom: 1px solid var(--accent-txt-cl);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -160,7 +188,8 @@ body {
   align-items: center;
 }
 
-.nav-list, .nav-item:not(:last-child) {
+.nav-list,
+.nav-item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -235,7 +264,6 @@ body {
   color: var(--basic-white-txt-cl);
   background-color: var(--primary-bg-cl);
   /* border: none; */
-
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -243,32 +271,72 @@ body {
 }
 
 /*========== Advantage ==========*/
-.advantage-list {
-  display: flex;
+.section-advantage {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+
+.advantage-list {
+  display: flex;
   /* column-gap: 24px; */
-  gap: 24px;
+  gap: 22px;
 }
 
 .advantage-title {
   margin-bottom: 8px;
 }
 
+/*========== Benefits section ==========*/
+.section-benefits {
+  padding-bottom: 120px;
+}
 
-/*----- Team section -----*/
+/*========== Team section ==========*/
 .team {
   background-color: var(--cloud-light-bg-cl);
 }
+
+.section-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  --items-card: 4;
+}
+
 .team-item {
   background-color: var(--basic-white-bg-cl);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-content {
+  padding: 32px 16px;
+}
+
+.team-name {
+  margin-bottom: 8px;
 }
 
 /*----- Footer section -----*/
+.section-footer {
+  padding: 100px 0px;
+}
 .footer {
   background-color: var(--navyblue-dark-bg-cl);
 }
+
+.logo-footer {
+  line-height: calc(21 / 18);
+
+  display: inline-block;
+  margin-bottom: 16px;
+
+}
 .footer-description {
+  width: 264px;
   color: var(--accent-txt-cl);
 }
 
