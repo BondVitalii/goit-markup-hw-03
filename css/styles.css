@@ -27,7 +27,7 @@
   --items-card: 3;
 }
 
-/*======= Reset styles =======*/
+/*======= Reset style =======*/
 h1,
 h2,
 h3,
@@ -196,6 +196,10 @@ body {
   margin-left: 40px;
 }
 .contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-style: normal;
   line-height: 1.5;
   color: var(--slate-txt-cl);
@@ -247,8 +251,8 @@ body {
 
 /*======= Advantage =======*/
 .section-advantage {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advantage-list {
   display: flex;
@@ -322,7 +326,7 @@ body {
 .section-portfolio {
   padding: 96px 0 120px;
 }
-/* top-line */
+/*top-line*/
 .filter-portfolio {
   display: flex;
   justify-content: center;
@@ -341,8 +345,7 @@ body {
   color: var(--basic-white-txt-cl);
   background-color: var(--pressed-bg-cl);
 }
-
-/* card */
+/*card*/
 .portfolio-card-descr {
   padding: 32px 16px;
   border-right: 1px solid var(--accent-txt-cl);
@@ -352,7 +355,6 @@ body {
 .portfolio-card-descr .title-third {
   margin-bottom: 8px;
 }
-
 .portfolio-list.card-set {
   row-gap: 48px;
 }
