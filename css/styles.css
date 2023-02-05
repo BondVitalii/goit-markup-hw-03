@@ -271,7 +271,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.benefits-item + .benefits-item {
+.benefits-list+.benefits-list {
   margin-left: 24px;
 }
 
