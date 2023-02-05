@@ -27,7 +27,7 @@
   --items-card: 3;
 }
 
-/*========== Reset styles ==========*/
+/*======= Reset styles =======*/
 h1,
 h2,
 h3,
@@ -80,7 +80,7 @@ body {
   margin-right: auto;
 
   /*для визуального эфекта время работы*/
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .btn {
@@ -165,14 +165,10 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
-  /* gap: 40px; */
 }
 .nav-item:not(:last-child) {
   margin-right: 40px;
 }
-/* .nav-item+ .nav-item {
-  margin-left: 40px;
-} */
 .nav-link {
   display: block;
   padding-top: 24px;
@@ -326,7 +322,7 @@ body {
 .section-portfolio {
   padding: 96px 0 120px;
 }
-/* top line */
+/* top-line */
 .filter-portfolio {
   display: flex;
   justify-content: center;
@@ -360,53 +356,3 @@ body {
 .portfolio-list.card-set {
   row-gap: 48px;
 }
-
-
-
-
-
-
-/* .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: var(--ident);
-} */
-
-
-
-/* .filter-item + .filter-item {
-  margin-left: var(--ident);
-} */
-
-
-/* .filter-portfolio {
-  display: flex;
-  justify-content: center;
-
-  column-gap: var(--ident);
-  margin-bottom: 72px;
-} */
-
-
-
-/* Памятка еще варианты .portfolio-item {
-  width: 360px;
-  margin-right: 24px;
-  margin-bottom: 24;
-} */
-
-/* .portfolio-item:nth-child(3n) {
-  margin-right: 0;
-} */
-
-/* .portfolio-item:nth-last-child(-n +3) {
-  margin-bottom: 0;
-} */
-
-/* .portfolio-item:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-.portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 24px;
-} */
